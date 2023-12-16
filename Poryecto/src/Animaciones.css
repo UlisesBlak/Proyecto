@@ -1,0 +1,75 @@
+.cardStyle {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.timid-element:hover {
+    animation: shake 0.3s ease-in-out;
+    color: rgb(0, 128, 21);
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-6px);
+    }
+
+    50% {
+        transform: translateX(6px);
+    }
+
+    75% {
+        transform: translateX(-6px);
+    }
+}
+
+
+.textWithDelayStyle {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.expandingBoxStyle {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background: rgb(0, 255, 21);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+.expandingBoxStyle:hover {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,42 @@
+nav {
+  background-color: #ED9B40;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 15px 20px 18px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  margin-right: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0015;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
